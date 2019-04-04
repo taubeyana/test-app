@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>app ringtune‏</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="glyphicon glyphicon-option-vertical openMenu"></div>
+            <ul>
+                <li><a href="listSongs.html">STYLES</a></li>
+                <li><a href="chooseContacts.html">CONTACT</a></li>
+                <li><a href="preview.html">PRIVIEW</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <h1>SELECT CONTACTS</h1>
+    </header>
+    <div class="container">
+        <div class="searchDiv">
+            <div class="glyphicon glyphicon-search"></div>
+            <input type="text" placeholder="Search contacts" />
+        </div>
+        <div class="orderContacts">
+            <div id="allContacts" class="selected">ALL</div>
+            <div id="selectedContacts">selected (<span class="numOfSelected">0</span>)</div>
+        </div>
+        <div class="showAllContacts">
+            <ul class="contactsList">
+                <li><input type="checkbox" name="contact" value="Noga Cohen" id="contact1"><label for="contact1">Noga Cohen</label></li>
+                <li><input type="checkbox" name="contact" value="Ofer Sofer" id="contact2"><label for="contact2">Ofer Sofer</label></li>
+                <li><input type="checkbox" name="contact" value="דניאל לוי" id="contact3"><label for="contact3">דניאל לוי</label></li>
+                <li><input type="checkbox" name="contact" value="מעיין שמגר" id="contact4"><label for="contact4">מעיין שמגר</label></li>
+                <li><input type="checkbox" name="contact" value="נוגה כהן" id="contact5"><label for="contact5">נוגה כהן</label></li>
+                <li><input type="checkbox" name="contact" value="יהונתן ארד" id="contact6"><label for="contact6">יהונתן ארד</label></li>
+            </ul>
+        </div>
+        <div class="showSelectedContacts" style="display:none">
+            <ul class="contactsList">
+                <li class="noSelected">No Selected Contacts</li>
+            </ul>
+        </div>
+    <button class="btnStyle disabled" id="chooseContactsBtn">GENERATE</button>
+    </div>
+</body>
+</html>

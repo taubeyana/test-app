@@ -1,0 +1,220 @@
+﻿@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
+body {
+    background: url('images/background.jpg') no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans Hebrew', serif;
+    color:white;
+    height: 100vh;
+}
+.container{
+    font-style:italic;
+}
+.container.center{
+    margin:100px auto;
+    text-align:center;
+    font-style: oblique;
+}
+.container h1{
+    font-size: 32px;
+}
+.circle{
+    border-radius:99%;
+    height:108px;
+    width:108px;
+    border: 5px solid white;
+    background-color: transparent;
+    margin: 25px auto;
+}
+header{
+    height: 60px;
+    background-color: #040019;
+    width: 100%;
+    border-bottom: 2px solid white;
+    margin-bottom: 15px;
+}
+header h1{
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+    font-style: oblique;
+    font-size: 30px;
+}
+.glyphicon.openMenu{
+    font-size: 26px;
+    top: 15px;
+    position: absolute;
+    left: 5px;
+}
+nav ul{
+    position: absolute;
+    background-color: white;
+    color: black;
+    list-style: none;
+    box-shadow: 4px 5px 11px 0px black;
+    top: 48px;
+    width: calc(100% - 41px);
+    padding: 10px;
+    font-family: 'Open Sans Hebrew', serif;
+    font-style: oblique;
+    font-size: 17px;
+    z-index: 1;
+    display:none;
+}
+nav ul li{
+    border-bottom: 2px solid #59104f;
+    width: 50%;
+}
+nav ul li a{
+     color:black;
+     font-style:normal;
+     line-height: 50px;
+}
+
+nav ul li:last-child{
+    border-bottom:0;
+}
+.container ul{
+    padding-left:0;
+}
+.container ul li{
+    list-style:none;
+    font-size: 16px;
+    margin-bottom: 13px;
+    font-style: oblique;
+}
+    .container ul li .radio-option {
+        width: 16px;
+        height: 16px;
+        background-image: url(images/emptyCircle.png);
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+        .container ul li .radio-option.selected {
+            background-image: url(images/filledCircle.png);
+        }
+
+.styleList, .previewList{
+    height:calc(100vh - 145px);
+    overflow-y: overlay;
+    flex-grow: 1;
+}
+.contactsList{
+    overflow-y: overlay;
+    height: calc(100vh - 255px);
+}
+.styleList::-webkit-scrollbar, .contactsList::-webkit-scrollbar {
+  width: 5px;
+  background-color: #554e52; 
+}
+
+.styleList::-webkit-scrollbar-thumb,.contactsList::-webkit-scrollbar-thumb  {
+  background-color: #F5F5F5; 
+}
+.contactsList li input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: text-top;
+}
+.contactsList li label{
+    font-weight: normal;
+}
+
+.btnStyle{
+    background-color:#040019;
+    border-radius:20px;
+    border:2px solid white;
+    color:#d20083;
+    line-height: 36px;
+    margin: 0 auto;
+    font-size: 18px;
+    width:180px;
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+}
+.btnStyle.disabled{
+    background-color:#888888;
+    color:white;
+}
+.searchDiv{
+    background-color: white;
+    height: 40px;
+    border: 2px solid black;
+    color: black;
+    border-radius: 20px;
+    line-height: 34px;
+    padding: 0px 10px;
+}
+.searchDiv input{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+}
+.searchDiv input::placeholder{
+    color: black;
+}
+.searchDiv .glyphicon.glyphicon-search{
+    font-size: 22px;
+    justify-content: inherit;
+    vertical-align: text-bottom;
+    margin-right: 7px;
+}
+.orderContacts{
+    display:flex;
+    margin: 15px 0;
+    font-style:italic;
+}
+.orderContacts>div{
+    height:40px;
+    width:50%;
+    display:inline-block;
+    font-size:18px;
+    text-align: center;
+    line-height: 37px;
+    opacity: 0.5;
+    background-color: white;
+    color: #040019;
+}
+.orderContacts .selected{
+    background-color: #040019;
+    color: white;
+    opacity:1;
+}
+
+#selectedContacts .numOfSelected{
+    opacity:1;
+}
+.preview{
+    color:white;
+    font-size:18px;
+    text-decoration:underline;
+    margin-top: 30px;
+    display: block;
+}
+#changeStyleBtn{
+    margin-top: 34vh;
+}
+.exitBtn{
+    font-size:18px;
+    margin-top: 20px;
+    text-align: center;
+}
+.updateGenrate{
+    display: inline-block;
+    direction: ltr;
+}
+.buttomBtns{
+    margin-bottom: 25px;
+}
+.container .center{
+    text-align: center;
+    margin-top: 35px;
+}
+.container .center img{
+    margin-top: 20px;
+    width: 90%;
+}
